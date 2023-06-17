@@ -129,3 +129,44 @@ These commands provide a range of functionalities to manage and control Docker c
    Docker will create a new container based on the specified image and start executing the command specified in the `CMD` instruction of the Dockerfile.
 
 That's it! You have successfully formed a Docker image and executed it as a container. The container will run your application within an isolated environment, separate from the host system. You can customize the Dockerfile based on your application's requirements and repeat the build and run steps to iterate on your containerized application.
+
+
+<h1>To delete a specific Docker image, follow these steps:</h1>
+
+1. **List the Docker images**: Start by listing the Docker images available on your system to identify the image you want to delete. Open a terminal or command prompt and run the following command:
+
+   ```
+   docker images
+   ```
+
+   This command will display a list of all the Docker images present on your system, along with their repository, tag, and image ID. Note the repository and tag or the image ID of the image you want to delete.
+
+2. **Delete the Docker image**: Once you have identified the image you want to delete, use the `docker rmi` command to remove it. There are two options to delete the image:
+
+   a. **Using repository and tag**: If you have the repository and tag information, run the following command, replacing `repository:tag` with the actual repository and tag of the image:
+
+      ```
+      docker rmi repository:tag
+      ```
+
+      For example, if the repository is `myapp` and the tag is `latest`, the command would be:
+
+      ```
+      docker rmi myapp:latest
+      ```
+
+   b. **Using image ID**: Alternatively, you can use the image ID to delete the image. Run the following command, replacing `image_id` with the actual ID of the image:
+
+      ```
+      docker rmi image_id
+      ```
+
+      For example:
+
+      ```
+      docker rmi abcdef123456
+      ```
+
+   Docker will remove the specified image from your system. If the image is being used by any running containers, Docker will throw an error and prevent the deletion. In that case, you need to stop and remove the containers using the image before deleting the image.
+
+It's important to note that deleting an image is irreversible, and you won't be able to recover it unless you have a backup or can pull it from a registry again.
