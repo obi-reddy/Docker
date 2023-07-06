@@ -1,4 +1,4 @@
-# Docker Introduction 
+# Docker Introduction  
 Docker is an open-source platform that allows developers to automate the deployment and management of applications within isolated containers. It provides an efficient way to package software and its dependencies into a standardized unit, called a container. These containers are lightweight, portable, and isolated from each other and the underlying host system.
 
 <h1>Here's a detailed explanation of Docker and its usefulness:</h1>
