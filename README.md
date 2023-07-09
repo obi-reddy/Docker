@@ -20,7 +20,7 @@ Docker is an open-source platform that allows developers to automate the deploym
 8. **DevOps and Continuous Integration/Continuous Deployment (CI/CD):** Docker plays a crucial role in the DevOps culture and CI/CD workflows. By using Docker containers, development, and operations teams can work together to define the application's infrastructure requirements and automate the deployment process. Docker enables the creation of reproducible build environments, simplifies the deployment pipeline, and allows for easy rollback in case of issues.
 
 Overall, Docker offers a range of benefits, including efficient resource utilization, improved application portability, simplified deployment and scaling, consistent environments, collaboration opportunities, and enhanced DevOps workflows. Its popularity stems from the ability to streamline application development, reduce deployment complexities, and improve overall efficiency and productivity.
-
+ 
 <h1>Docker important commands</h1>
 
 A detailed explanation of important Docker commands:
